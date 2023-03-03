@@ -1,13 +1,13 @@
-const { Router } = require('express');
+import { Router } from "express";
 
 const router = new Router();
 
-router.get('/test', (req, res) => {
-    const data = {
-        name: 'Fazt',
-        website: 'faztweb.com'
-    };
-    res.json(data);
-});  
+router.get("/test", (req, res) => {
+  const data = {
+    name: "Fazt",
+    website: "faztweb.com",
+  };
+  res.json(data);
+});
 
-module.exports = router;
+export default router;
